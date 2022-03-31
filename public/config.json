@@ -66,10 +66,10 @@
     },
     "userInterfaces":
     {
-        "configModal": {
-            "height": 700,
-            "width": 1000,
-            "fullscreen": false
+        "configurationSupportsReadOnlyMode" : true,
+        configInspector: {
+          size: 'scm-lg',
+          emptyIframe: true
         }
     },
     "schema": 
