@@ -10,7 +10,7 @@ console.log('keith ng');
  */
 exports.index = function(req, res) {
 	console.log('keith ng 2');
-	if (!req.session.token) {
+	if (!req || !req.hasOwnProperty("session") || !req.session.hasOwnProperty("token")) {
 		console.log('keith ng 3');
 		res.render("index", {
 			title: "Unauthenticated",
