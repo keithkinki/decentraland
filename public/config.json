@@ -11,8 +11,7 @@ module.exports = function configJSON(req) {
     lang: {
         en-US: {
             name: 'decentraland',
-            description: 'To send message to decentraland',
-            step1Label: 'Configure Activity'
+            description: 'To send message to decentraland'
         }
     },
     arguments: {
