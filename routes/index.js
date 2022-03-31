@@ -3,6 +3,8 @@
 // Deps
 var activity = require("./activity");
 
+console.log('keith ng');
+
 /*
  * GET home page.
  */
