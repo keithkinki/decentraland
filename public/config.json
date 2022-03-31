@@ -28,12 +28,14 @@
             ],
             "outArguments": [],
             "url": "https://decentraland-kn.herokuapp.com/execute",
-            "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 10000
+            // The amount of time we want Journey Builder to wait before cancel the request. Default is 60000, Minimal is 1000
+            timeout: 10000,
+            // how many retrys if the request failed with 5xx error or network error. default is 0
+            retryCount: 3,
+            // wait in ms between retry.
+            retryDelay: 1000,
+            // The number of concurrent requests Journey Builder will send all together
+            concurrentRequests: 5
         }
     },
     
@@ -41,27 +43,19 @@
     {
         "save":
         {
-            "url": "https://decentraland-kn.herokuapp.com/save",
-            "verb": "POST",
-            "useJwt": true
+            "url": "https://decentraland-kn.herokuapp.com/save"
         },
         "publish":
         {
-            "url": "https://decentraland-kn.herokuapp.com/journeybuilder/publish",
-            "verb": "POST",
-            "useJwt": true
+            "url": "https://decentraland-kn.herokuapp.com/journeybuilder/publish"
         },
         "stop":
         {
-            "url": "https://decentraland-kn.herokuapp.com//stop",
-            "verb": "POST",
-            "useJwt": true
+            "url": "https://decentraland-kn.herokuapp.com//stop"
         },
         "validate":
         {
-            "url": "applicationExtensionKey/journeybuilder/validate",
-            "verb": "POST",
-            "useJwt": true
+            "url": "applicationExtensionKey/journeybuilder/validate"
         }
     },
     "userInterfaces":
