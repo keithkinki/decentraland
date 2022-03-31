@@ -16,10 +16,10 @@ var app = express();
 // Configure Express
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.raw({type: 'application/jwt'}));
-//app.use(express.static(path.join(__dirname, 'public'), {index: '_'}));
+app.use(express.static(path.join(__dirname, 'public'), {index: '_'}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-//app.set('view engine', 'html');
+app.set('view engine', 'html');
 
 // Express in Development Mode
 if ('development' == app.get('env')) {
@@ -42,5 +42,3 @@ http.createServer(app).listen(
     console.log('Express server listening on port ' + app.get('port'));
   }
 );
-
-app.use(express.static(path.join(__dirname, 'public')));
