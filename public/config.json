@@ -1,4 +1,5 @@
-{
+module.exports = function configJSON(req) {
+  return {
     "workflowApiVersion": "1.1",
     "metaData":
     {
