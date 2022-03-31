@@ -16,7 +16,7 @@ var app = express();
 // Configure Express
 app.set('port', process.env.PORT || 3000);
 app.use(bodyParser.raw({type: 'application/jwt'}));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), {index: '_'}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -24,11 +24,6 @@ app.use(bodyParser.json());
 if ('development' == app.get('env')) {
   app.use(errorhandler());
 }
-
-console.log(routes);
-console.log(routes.index);
-console.log(routes.login);
-console.log(routes.logout);
 
 app.get('/', routes.index );
 app.post('/login', routes.login );
