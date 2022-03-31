@@ -15,13 +15,13 @@ exports.index = function(req, res) {
 		console.log('keith ng 3');
 		res.render("index.html", {
 			title: "Unauthenticated",
-			errorMessage: "This app may only be loaded via Salesforce Marketing Cloud"
+			message: "This app may only be loaded via Salesforce Marketing Cloud"
 		});
 	} else {
 		console.log('keith ng 4');
 		res.render("index.html", {
 			title: "Journey Builder Activity",
-			results: activity.logExecuteData
+			message: activity.logExecuteData
 		});
 	}
 };
