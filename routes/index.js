@@ -9,6 +9,7 @@ console.log('keith ng');
  * GET home page.
  */
 exports.index = function(req, res) {
+	console.log('keith ng 2');
 	if (!req.session.token) {
 		res.render("index", {
 			title: "Unauthenticated",
