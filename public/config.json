@@ -23,7 +23,7 @@
         {
             "inArguments": [
               { 
-                message: "Hello, Metaverse"
+                "message": "Hello, Metaverse"
               }
             ],
             "outArguments": [],
