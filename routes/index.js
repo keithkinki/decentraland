@@ -10,6 +10,7 @@ console.log('keith ng');
  */
 exports.index = function(req, res) {
 	console.log('keith ng 2');
+	console.log(req);
 	if (!req || !req.hasOwnProperty("session") || !req.session.hasOwnProperty("token")) {
 		console.log('keith ng 3');
 		res.render("index.html", {
