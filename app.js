@@ -20,8 +20,9 @@ app.use(express.static(path.join(__dirname, 'public'), {index: '_'}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 //app.set('view engine', 'html');
-app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'html');
+// app.engine('html', require('ejs').renderFile);
+// app.set('view engine', 'html');
+app.set('view-engine', 'html');
 
 // Express in Development Mode
 if ('development' == app.get('env')) {
