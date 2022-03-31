@@ -1,6 +1,6 @@
 module.exports = function configJSON(req) {
   return {
-    "workflowApiVersion": "1.1",
+    workflowApiVersion: '1.1',
     "metaData":
     {
         "icon": "images/icon.png",
