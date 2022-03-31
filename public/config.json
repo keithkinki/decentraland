@@ -67,7 +67,7 @@
     "userInterfaces":{
         "configurationSupportsReadOnlyMode" : true,
         "configInspector": {
-          "size": "scm-lg,
+          "size": "scm-lg",
           "emptyIframe": true
         }
     },
