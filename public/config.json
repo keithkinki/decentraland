@@ -1,0 +1,83 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData":
+    {
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
+        "category": "message"
+    },
+
+    "type": "REST",
+    "lang":
+    {
+        "en-US":
+        {
+            "name": "decentraland",
+            "description": "",
+            "step1Label": "Configure Activity"
+        }
+    },
+    "arguments":
+    {
+        "execute":
+        {
+            "inArguments": [
+              {
+                "msg": "hello, decentraland"
+              }
+            ],
+            "outArguments": [],
+            "url": "https://decentraland-kn.herokuapp.com/execute",
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+    },
+
+    "configurationArguments":
+    {
+        "save":
+        {
+            "url": "https://decentraland-kn.herokuapp.com/save",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "publish":
+        {
+            "url": "https://decentraland-kn.herokuapp.com/publish",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "stop":
+        {
+            "url": "https://decentraland-kn.herokuapp.com/stop",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "validate":
+        {
+            "url": "https://decentraland-kn.herokuapp.com/validate",
+            "verb": "POST",
+            "useJwt": true
+        }
+    },
+    "userInterfaces":{
+        "configurationSupportsReadOnlyMode" : true,
+        "configInspector": {
+          "size": "scm-lg,
+          "emptyIframe": true
+        }
+    },
+    "schema":
+    {
+        "arguments":{
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}
