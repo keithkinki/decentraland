@@ -12,13 +12,13 @@ exports.index = function(req, res) {
 	console.log('keith ng 2');
 	if (!req || !req.hasOwnProperty("session") || !req.session.hasOwnProperty("token")) {
 		console.log('keith ng 3');
-		res.status(200).send("index", {
+		res.render("index", {
 			title: "Unauthenticated",
 			errorMessage: "This app may only be loaded via Salesforce Marketing Cloud"
 		});
 	} else {
 		console.log('keith ng 4');
-		res.status(200).send("index", {
+		res.render("index", {
 			title: "Journey Builder Activity",
 			results: activity.logExecuteData
 		});
