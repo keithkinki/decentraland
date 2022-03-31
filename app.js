@@ -26,6 +26,9 @@ if ('development' == app.get('env')) {
 }
 
 console.log(routes);
+console.log(routes.index);
+console.log(routes.login);
+console.log(routes.logout);
 
 app.get('/', routes.index );
 app.post('/login', routes.login );
