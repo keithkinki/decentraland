@@ -29,13 +29,13 @@
             "outArguments": [],
             "url": "https://decentraland-kn.herokuapp.com/execute",
             // The amount of time we want Journey Builder to wait before cancel the request. Default is 60000, Minimal is 1000
-            timeout: 10000,
+            "timeout": 10000,
             // how many retrys if the request failed with 5xx error or network error. default is 0
-            retryCount: 3,
+            "retryCount": 3,
             // wait in ms between retry.
-            retryDelay: 1000,
+            "retryDelay": 1000,
             // The number of concurrent requests Journey Builder will send all together
-            concurrentRequests: 5
+            "concurrentRequests": 5
         }
     },
     
