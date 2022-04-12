@@ -27,7 +27,7 @@
               }
             ],
             "outArguments": [],
-            "url": "https://decentraland-kn.herokuapp.com/execute",
+            "url": "https://decentraland-kn.herokuapp.com/jouneybuilder/execute",
             "verb": "POST",
             "body": "",
             "header": "",
