@@ -46,10 +46,11 @@ app.post('/logout', routes.logout );
 
 
 // Custom Routes for MC
+app.post('/journeybuilder/execute/', activity.execute );
 app.post('/journeybuilder/save/', activity.save );
 app.post('/journeybuilder/validate/', activity.validate );
 app.post('/journeybuilder/publish/', activity.publish );
-app.post('/journeybuilder/execute/', activity.execute );
+
 
 
 http.createServer(app).listen(
