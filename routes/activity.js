@@ -3,8 +3,7 @@ var util = require('util');
 
 // Deps
 const Path = require('path');
-//const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
-const JWT = require('/lib/jwtDecoder.js');
+const JWT = require(Path.join(__dirname, '..', 'lib', 'jwtDecoder.js'));
 var util = require('util');
 let axios = require("axios");
 
@@ -76,6 +75,7 @@ exports.save = function (req, res) {
  * POST Handler for /execute/ route of Activity.
  */
 exports.execute = function (req, res) {
+    console.log('exports.execute');
     JWT(req.body, process.env.jwtSecret, (err, decoded) => {
         console.log('keith running');
         // verification error -> unauthorized request
