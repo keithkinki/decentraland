@@ -24,7 +24,10 @@
             "inArguments": [
               {
                 "msg": "hello, decentraland"
-              }
+              },
+                {
+                    "name": "{{InteractionDefaults.Email}}"
+                }
             ],
             "outArguments": [],
             "url": "https://decentraland-kn.herokuapp.com/execute",
