@@ -46,6 +46,7 @@ define(['postmonger'], function (Postmonger) {
      * The config.json will be updated here if there are any updates to be done via Front End UI
      */
     function save() {
+        /*
         payload['arguments'].execute.inArguments = [
             {
                 "message": "hello, decentraland"
@@ -54,6 +55,7 @@ define(['postmonger'], function (Postmonger) {
                 "ContactKey1": "{{Contact.key}}"
             }
         ];
+        */
         payload['metaData'].isConfigured = true;
         connection.trigger('updateActivity', payload);
         
