@@ -21,17 +21,10 @@
     "execute": {
       "inArguments": [
         {
-          "emailAddress": "123"
-        },
-        {
-          "phoneNumber": "456"
+          "msg": "I am testing"
         }
       ],
-      "outArguments": [
-        {
-          "foundSignupDate": ""
-        }
-      ],
+      "outArguments": [],
       "url": "https://decentraland-kn.herokuapp.com/journeybuilder/execute"
     }
   },
@@ -68,36 +61,5 @@
         "width": 300,
         "fullscreen": true
       }
-    },
-    "schema": {
-    "arguments": {
-      "execute": {
-        "inArguments": [
-          {
-            "phoneNumber": {
-              "dataType": "Phone",
-              "isNullable": false,
-              "direction": "in"
-            }
-          },
-          {
-            "emailAddress": {
-              "dataType": "Email",
-              "isNullable": false,
-              "direction": "in"
-            }
-          }
-        ],
-        "outArguments": [
-          {
-            "foundSignupDate": {
-              "dataType": "Date",
-              "direction": "out",
-              "access": "visible"
-            }
-          }
-        ]
-      }
     }
-  }
 }
