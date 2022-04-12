@@ -27,7 +27,7 @@
               }
             ],
             "outArguments": [],
-            "url": "https://decentraland-kn.herokuapp.com/jouneybuilder/execute",
+            "url": "https://decentraland-kn.herokuapp.com/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -41,25 +41,25 @@
     {
         "save":
         {
-            "url": "https://decentraland-kn.herokuapp.com/journeybuilder/save",
+            "url": "https://decentraland-kn.herokuapp.com/save",
             "verb": "POST",
             "useJwt": true
         },
         "publish":
         {
-            "url": "https://decentraland-kn.herokuapp.com/journeybuilder/publish",
+            "url": "https://decentraland-kn.herokuapp.com/publish",
             "verb": "POST",
             "useJwt": true
         },
         "stop":
         {
-            "url": "https://decentraland-kn.herokuapp.com/journeybuilder/stop",
+            "url": "https://decentraland-kn.herokuapp.com/stop",
             "verb": "POST",
             "useJwt": true
         },
         "validate":
         {
-            "url": "https://decentraland-kn.herokuapp.com/journeybuilder/validate",
+            "url": "https://decentraland-kn.herokuapp.com/validate",
             "verb": "POST",
             "useJwt": true
         }
