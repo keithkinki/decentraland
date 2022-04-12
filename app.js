@@ -43,7 +43,6 @@ app.post('/login', routes.login );
 app.post('/logout', routes.logout );
 */
 
-app.use('/config.json', routes.config);
 
 
 // Custom Routes for MC
