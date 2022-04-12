@@ -31,11 +31,9 @@ app.use(bodyParser.json());
 //app.set('view-engine', 'html');
 
 // Express in Development Mode
-/*
 if ('development' == app.get('env')) {
   app.use(errorhandler());
 }
-*/
 
 /*
 app.get('/', routes.index );
