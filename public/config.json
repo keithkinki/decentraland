@@ -29,7 +29,11 @@
                     "test": "it is a test"
                 }
             ],
-            "outArguments": [],
+            "outArguments": [
+                {
+                    "foundSignupDate": ""
+                }
+            ],
             "url": "https://decentraland-kn.herokuapp.com/execute",
             "verb": "POST",
             "body": "",
