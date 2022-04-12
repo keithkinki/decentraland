@@ -17,30 +17,24 @@
             "step1Label": "Configure Activity"
         }
     },
-    "arguments":
-    {
-        "execute":
+    "arguments": {
+    "execute": {
+      "inArguments": [
         {
-            "inArguments": [
-              {
-                "msg": "hello, decentraland!"
-              }
-            ],
-            "outArguments": [
-                {
-                    "foundSignupDate": ""
-                }
-            ],
-            "url": "https://decentraland-kn.herokuapp.com/execute",
-            "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 10000
+          "emailAddress": "{{InteractionDefaults.Email}}"
+        },
+        {
+          "phoneNumber": "{{Contact.Default.PhoneNumber}}"
         }
-    },
-
+      ],
+      "outArguments": [
+        {
+          "foundSignupDate": ""
+        }
+      ],
+      "url": "https://some-endpoint.com/execute"
+    }
+  },
     "configurationArguments":
     {
         "save":
@@ -75,25 +69,35 @@
         "fullscreen": true
       }
     },
-    "schema":
-    {
-        "arguments":{
-            "execute": {
-                "inArguments": [{
-                  "msg": {
-						"dataType": "Text",
-						"isNullable": true,
-						"direction": "in"
-					}
-                }],
-                "outArguments": [{
-                  "foundSignupDate": {
-						"dataType": "Text",
-						"isNullable": true,
-						"direction": "out"
-					}    
-                }]
+    "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [
+          {
+            "phoneNumber": {
+              "dataType": "Phone",
+              "isNullable": false,
+              "direction": "in"
             }
-        }
+          },
+          {
+            "emailAddress": {
+              "dataType": "Email",
+              "isNullable": false,
+              "direction": "in"
+            }
+          }
+        ],
+        "outArguments": [
+          {
+            "foundSignupDate": {
+              "dataType": "Date",
+              "direction": "out",
+              "access": "visible"
+            }
+          }
+        ]
+      }
     }
+  }
 }
