@@ -21,10 +21,10 @@
     "execute": {
       "inArguments": [
         {
-          "emailAddress": "{{InteractionDefaults.Email}}"
+          "emailAddress": "123"
         },
         {
-          "phoneNumber": "{{Contact.Default.PhoneNumber}}"
+          "phoneNumber": "456"
         }
       ],
       "outArguments": [
