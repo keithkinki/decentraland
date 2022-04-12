@@ -90,7 +90,7 @@
                   "foundSignupDate": {
 						"dataType": "Text",
 						"isNullable": true,
-						"direction": "in"
+						"direction": "out"
 					}    
                 }]
             }
