@@ -32,7 +32,7 @@
           "foundSignupDate": ""
         }
       ],
-      "url": "https://decentraland-kn.herokuapp.com/journeybuilder/execute"
+      "url": "https://decentraland-kn.herokuapp.com/execute"
     }
   },
     "configurationArguments":
