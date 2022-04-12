@@ -83,7 +83,7 @@ exports.execute = function (req, res) {
             console.error(err);
             return res.status(401).end();
         }
-        console.log('doing jwt);
+        console.log('doing jwt');
         if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
             console.log('##### decoded ####=>', decoded);
             res.send(200, 'Execute');
