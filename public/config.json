@@ -79,8 +79,20 @@
     {
         "arguments":{
             "execute": {
-                "inArguments": [],
-                "outArguments": []
+                "inArguments": [{
+                  "msg": {
+						"dataType": "Text",
+						"isNullable": true,
+						"direction": "in"
+					}
+                }],
+                "outArguments": [{
+                  "foundSignupDate": {
+						"dataType": "Text",
+						"isNullable": true,
+						"direction": "in"
+					}    
+                }]
             }
         }
     }
