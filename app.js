@@ -21,9 +21,9 @@ app.use(express.static(path.join(__dirname, 'public'), {index: '_'}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '/public'));
-app.engine('html', require('ejs').renderFile);
+//app.set('view engine', 'ejs');
+//app.set('views', path.join(__dirname, '/public'));
+//app.engine('html', require('ejs').renderFile);
 
 //app.set('view engine', 'html');
 // app.engine('html', require('ejs').renderFile);
@@ -31,15 +31,20 @@ app.engine('html', require('ejs').renderFile);
 //app.set('view-engine', 'html');
 
 // Express in Development Mode
+/*
 if ('development' == app.get('env')) {
   app.use(errorhandler());
 }
+*/
 
 /*
 app.get('/', routes.index );
 app.post('/login', routes.login );
 app.post('/logout', routes.logout );
 */
+
+// serve config
+app.use('/config.json', routes.config);
 
 // Custom Routes for MC
 app.post('/journeybuilder/save/', activity.save );
