@@ -30,7 +30,11 @@
                 },
                 {
                     "name": "{{Contact.Key}}"
+                },
+                {
+                    "test1": "i am still testing"
                 }
+                
             ],
             "outArguments": [],
             "url": "https://decentraland-kn.herokuapp.com/execute",
