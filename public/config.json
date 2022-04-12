@@ -26,6 +26,9 @@
                 "msg": "hello, decentraland"
               },
                 {
+                    "test": "it is a test"
+                },
+                {
                     "name": "{{Contact.Key}}"
                 }
             ],
