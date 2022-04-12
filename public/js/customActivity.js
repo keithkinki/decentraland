@@ -50,10 +50,13 @@ define(['postmonger'], function (Postmonger) {
         payload['arguments'].execute.inArguments = [
             {
                 "message": "hello, decentraland"
-            },
+            }
+            /*
+            ,
             {
                 "ContactKey1": "{{Contact.key}}"
             }
+            */
         ];
         
         payload['metaData'].isConfigured = true;
